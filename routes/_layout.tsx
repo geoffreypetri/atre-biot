@@ -5,8 +5,10 @@ export default function Layout({ Component, state }: PageProps) {
   return (
     <div class="layout">
         <header>
-            <img src="/ATRE-TAICHI-LOGO-200.png" />
-            <h1>Académie de Taichi et d'Arts Energétiques</h1>
+            <a href="/">
+                <img src="/ATRE-TAICHI-LOGO-200.png" />
+                <h1>Académie de Taichi et d'Arts Energétiques</h1>
+            </a>
         </header>
         <footer>
             <nav>
