@@ -7,6 +7,57 @@
 * {
   margin: 0;
 }
+.layout {
+  display: grid; 
+  min-height: 100vh;
+  grid-template-columns: 100px 100px 100px 100px 100px; 
+  grid-template-rows: 50px 100px 100px 100px 100px 1fr 30px; 
+  gap: 20px; 
+  grid-template-areas: 
+    ".      .      .      .      ."
+    "header header header header header"
+    ".      .      .      .      ."
+    ".      .      .      .      ."
+    ".      .      .      .      ."
+    ".      .      .      .      ."
+    "footer footer footer footer footer"; 
+  justify-content: center; 
+  align-content: stretch; 
+  justify-items: stretch;
+}
+header {
+  grid-area: header;
+  text-align: center;
+}
+header h1 {
+  font-size: 1rem;
+}
+header img {
+  height: 80px;
+  margin: auto;
+}
+footer {
+  grid-area: footer;
+  text-align: right;
+  color: #DDD;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  vertical-align: middle;
+  display: inline-flex;
+  align-self: center;
+}
+footer a {
+  color: inherit;
+}
+footer svg {
+  height:1rem;
+  width:1rem;
+}
 button {
   color: inherit;
 }
