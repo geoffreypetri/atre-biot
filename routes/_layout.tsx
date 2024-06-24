@@ -10,6 +10,13 @@ export default function Layout({ Component, state }: PageProps) {
                 <h1>Académie de Taichi et d'Arts Energétiques</h1>
             </a>
         </header>
+        <nav>
+            <ul class="nav list-inline">
+                <li><a href="ecole">Notre école</a></li>
+                <li><a href="taichi-sante">Taichi santé</a></li>
+                <li><a href="infos">Renseignements</a></li>
+            </ul>
+        </nav>
         <footer>
             <nav>
                 <ul>

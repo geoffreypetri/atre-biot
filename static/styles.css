@@ -17,38 +17,43 @@ html {
 .layout {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 20px auto auto 100px 100px minmax(100px, auto) 1fr auto; 
+  justify-content: center; 
+  align-content: stretch; 
+  justify-items: stretch;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10px auto auto 100vw auto auto 1fr auto; 
   gap: 20px; 
   grid-template-areas: 
     ". . . ."
     "header header header header"
-    "main main main main"
-    "infos infos infos infos"
-    "contact contact contact contact"
-    "map map biot yinyang"
-    ". . . ."
-    "footer footer footer footer";
-  justify-content: center; 
-  align-content: stretch; 
-  justify-items: stretch;
+    "nav    nav    nav    nav"
+    "main   main   main   main"
+    "touch  touch  touch  yy"
+    "map    map    map    biot"
+    ".      .      .      ."
+    "footer footer footer footer"
 }
 
 @media only screen and (min-width: 768px) {
 
   .layout {
-    grid-template-columns: 100px 100px 100px 100px 100px; 
-    grid-template-rows: 50px auto auto 100px 100px auto 1fr 30px; 
-    gap: 20px; 
+    grid-template-columns: repeat(12, 30px);
+    grid-template-rows: 20px auto auto 30px 30px 30px 30px 30px 30px 30px 30px auto 1fr auto; 
     grid-template-areas: 
-      ".      .      .      .      ."
-      "header header header header header"
-      "main   main   main   main   yinyang"
-      "map    map    infos  infos  infos"
-      "map    map    contact contact contact"
-      ".      .      .      .      biot"
-      ".      .      .      .      ."
-      "footer footer footer footer footer";
+      ".      .      .      .      .      .      .      .      .      .      .      ."
+      "header header header header header header header header header header header header"
+      "nav    nav    nav    nav    nav    nav    nav    nav    nav    nav    nav    nav"
+      "main   main   main   main   main   main   main   main   .      .      yy     yy"
+      "main   main   main   main   main   main   main   main   .      .      yy     yy"
+      "main   main   main   main   main   main   main   main   map    map    map    map"
+      "main   main   main   main   main   main   main   main   map    map    map    map"
+      "main   main   main   main   main   main   main   main   map    map    map    map"
+      "main   main   main   main   main   main   main   main   map    map    map    map"
+      "main   main   main   main   main   main   main   main   touch  touch  touch  touch"
+      "main   main   main   main   main   main   main   main   touch  touch  touch  touch"
+      ".      .      .      .      .      .      .      .      .      .      biot   biot"
+      ".      .      .      .      .      .      .      .      .      .      .      ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
   }
 }
 header {
@@ -70,17 +75,45 @@ header img {
   height: 80px;
   margin: auto;
 }
+nav {
+  grid-area: nav;
+  margin: 0 auto;
+  text-align: center;
+}
+.list-inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav.list-inline li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav.list-inline li a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.nav.list-inline li a:hover {
+  background-color: #DDD;
+}
 main {
   grid-area: main;
   background-color: rgb(228, 35, 37, 0.1);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 8px 12px;
+  background: url('3f2b5043-315d-4b2e-a265-59d791d95c09.jpg') no-repeat;
+  background-size: contain;
 }
 main h2 {
   font-size: 1rem;
 }
 yinyang {
-  grid-area: yinyang;
+  grid-area: yy;
   background: #fff;
   border-radius: 12px;
   padding: 8px 12px;
@@ -104,7 +137,7 @@ map span {
   position: absolute;
   bottom: 12px;
   color: #eee;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 500;
   text-decoration: none;
 }
@@ -119,13 +152,14 @@ infos ul {
   margin: 0;
   padding: 0;
 }
-contact {
-  grid-area: contact;
+touch {
+  grid-area: touch;
   background: #EEE;
   border-radius: 12px;
   padding: 8px 12px;
+  font-size: 0.8rem;
 }
-contact ul {
+touch ul {
   list-style: none;
   margin: 0;
   padding: 0;

@@ -6,9 +6,6 @@ export default function Home() {
   return (
     <>
       <main>
-          <h2>Une pratique martiale pour une bonne santé</h2>
-          <p>Le <i>Tai Chi Chuan</i> art martial chinois est aujourd'hui pratiqué comme une gymnastique traditionnelle accessible à tous.
-          Sa pratique régulière apporte santé, calme, équilibre, contrôle du stress et relaxation.</p>
       </main>
       <yinyang>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80">
@@ -24,6 +21,17 @@ export default function Home() {
         Salle Paul Gilardi<br/>
         Chemin des Combes 06410 Biot</span></a>
       </map>
+      <touch>
+        <ul>
+          <li>Jean-Marc Guibilato</li>
+          <li><a href="tel:0614608134">06 14 60 81 34</a></li>
+          <li><a href="mailto:academietaichi@orange.fr">academietaichi@orange.fr</a></li>
+        </ul>
+      </touch>
+      <biot>
+        <img src="/2022_Logo_320_50_WP-1.png" />
+      </biot>
+      {/* 
       <infos>
         <ul>
           <li>Mardi 19h &ndash; 20h</li>
@@ -36,10 +44,7 @@ export default function Home() {
           <li>06 14 60 81 34</li>
           <li>academietaichi@orange.fr</li>
         </ul>
-      </contact>
-      <biot>
-        <img src="/2022_Logo_320_50_WP-1.png" />
-      </biot>
+      </contact> */}
     </>
   );
 }
