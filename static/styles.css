@@ -109,6 +109,9 @@ mark {
   border-radius: 8px;
   padding: 12px;
   background-color: rgb(249, 191, 22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 mark > p {
   text-align: center;

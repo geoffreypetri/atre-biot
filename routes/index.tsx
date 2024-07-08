@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <mark>
-        <p>Venez essayer, cours d'essai gratuit !</p>
+        <p>Venez essayer un cours d'essai gratuit avec nous !</p>
       </mark>
       <figure id="taichi">
         <img src="/taichi.png" alt="Taichi" />
