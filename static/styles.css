@@ -119,18 +119,18 @@ mark > p {
 figure#taichi {
   grid-area: taichi;
   background: #fff;
-  border-radius: 12px;
-  padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px;
 }
 figure#taichi > img {
   object-fit: cover;
-  width: 100%;
+  height: 100%;
 }
 figure#yinyang {
   grid-area: ying;
   background: #fff;
-  border-radius: 12px;
-  padding: 8px 12px;
+  border-radius: 8px;
+  padding: 8px;
 }
 figure#photo {
   grid-area: photo;
