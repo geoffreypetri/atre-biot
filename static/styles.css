@@ -7,47 +7,295 @@
 * {
   margin: 0;
 }
+
+:root {
+  --area-width: 80px;
+  --area-height: var(--area-width);
+  --area-gap: 20px;
+  --bg-color: #fff6cc;
+}
+
 html {
   line-height: 1.5;
+  font-size: 4vw;
   -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--bg-color);
 }
+
+
 .layout {
   min-height: 100vh;
+}
+.layout.grid {
   display: grid;
-  justify-content: center; 
-  align-content: stretch; 
-  justify-items: stretch;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 10px auto auto 100vw auto auto 1fr auto; 
-  gap: 20px; 
-  /* grid-template-areas: 
-    ". . . ."
-    "header header header header"
-    "nav    nav    nav    nav"
-    "main   main   main   main"
-    "touch  touch  touch  yy"
-    "map    map    map    biot"
-    ".      .      .      ."
-    "footer footer footer footer" */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(11, minmax(0, calc((100vw - 3 * var(--area-gap)) / 4)));
+  /*grid-auto-rows: 1fr;*/
+  /*grid-auto-rows: minmax(1fr, var(--area-height)); */
+  gap: var(--area-gap);
+  grid-auto-flow: row;
+}
+
+.layout.grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+
+/* Just to make the grid visible */
+
+/* .layout.grid > * {
+  background: rgba(0,0,0,0.1);
+  border: 1px white solid;
+} */
+
+.rounded {
+  border-radius: 8px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: .2rem .5rem;
+  vertical-align: middle;
+}
+
+
+header {
+  grid-area: 1 / 1 / span 2 / span 2;
+  place-self: stretch;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 50%
+}
+header h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav li a {
+  display: block;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+.nav li a:hover {
+  background-color: #DDD;
+}
+
+
+
+nav {
+  /* grid-column-start: 3;
+  grid-row-start: 1; */
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+mark {
+  /* grid-row-start: 3; */
+  grid-column-end: span 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd00026;
+  padding: 1rem;
+}
+mark > p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+figure#map {
+  /* grid-column-start: 1;
+  grid-row-start: 4; */
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+figure#map a {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+figure#map a > img {
+  object-fit: contain;
+  width: 100%;
+}
+figure#map a > figcaption {
+  border-radius: 0 0 8px 8px;
+  background-color: rgba(255, 255, 255, 1);
+  bottom: 0;
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+section#contact {
+  /* grid-row-start: 4; */
+  grid-column-end: span 2;
+  grid-row-end: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+section#contact h4 {
+  font-size: 0.9rem;
+  margin-bottom: .4rem;
+}
+section#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+
+figure#photo {
+  /* grid-column-start: 1;
+  grid-row-start: 6; */
+  grid-column-end: span 4;
+  grid-row-end: span 4;
+}
+figure#photo > img {
+  object-fit: contain;
+  width: 100%;
+}
+
+figure#taichi {
+  grid-column-start: 1;
+  grid-row-start: 10;
+  grid-column-end: 1;
+  grid-row-end: span 2;
+  background-color: white;
+  padding: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+figure#taichi > img {
+  object-fit: cover;
+  height: 100%;
+}
+figure#yinyang {
+  grid-column-start: 2;
+  grid-row-start: 10;
+  grid-column-end: 2;
+  grid-row-end: 10;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+figure#biot {
+  grid-column-start: 3;
+  grid-row-start: 10;
+  grid-column-end: span 2;
+  grid-row-end: 10;
+  align-self: start;
+  padding: 8px;
+}
+figure#biot img {
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-row-start: -1;
+  grid-column-end: -1;
+  grid-row-end: -1;
+  text-align: center;
+  color: rgba(0, 0, 0, .1);
+  font-size: 12px;
+  place-self: end stretch;
+}
+footer li {
+  margin: .2em .5em;
+}
+footer a {
+  color: inherit;
+}
+footer a:hover {
+  color: #AAA
+}
+footer svg {
+  height: 1em;
+  width: 1em;
+  vertical-align: baseline;
 }
 
 @media only screen and (min-width: 768px) {
 
+body {
+  background-color: red;
+}
+}
+
+/* 
+
+
+
+
+
+ */
+
+/* @media only screen and (min-width: 768px) {
+
+  :root {
+    --cell-width: 80px;
+    --cell-height: var(--cell-width);
+  }
+
   .layout {
-    grid-template-columns: repeat(12, 80px);
-    grid-template-rows: 20px repeat(8, 80px) 1fr auto; 
+    grid-template-columns: repeat(12, var(--area-width));
+    grid-template-rows: 20px repeat(8, var(--area-height)) 1fr auto; 
     grid-template-areas: 
       ".      .      .      .      .      .      .      .      .      .      .      ."
-      "header header header mark   mark   mark   mark   mark   mark   mark   mark   taichi"
-      "header header header photo  photo  photo  photo  photo  photo  .      ying   taichi"
+      "header header header mark   mark   mark   mark   mark   mark   .      .      ."
+      "header header header photo  photo  photo  photo  photo  photo  map    map    map"
       "header header header photo  photo  photo  photo  photo  photo  map    map    map"
       "nav    nav    nav    photo  photo  photo  photo  photo  photo  map    map    map"
-      "nav    nav    nav    photo  photo  photo  photo  photo  photo  map    map    map"
-      ".      .      .      photo  photo  photo  photo  photo  photo  contact contact contact"
-      ".      .      .      photo  photo  photo  photo  photo  photo  contact contact contact"
+      "nav    nav    nav    photo  photo  photo  photo  photo  photo  addr   addr   addr"
+      ".      .      taichi photo  photo  photo  photo  photo  photo  contact contact contact"
+      ".      ying   taichi photo  photo  photo  photo  photo  photo  contact contact contact"
       ".      .      .      .      .      .      .      .      .      .      biot   biot"
       ".      .      .      .      .      .      .      .      .      .      .      ."
       "footer footer footer footer footer footer footer footer footer footer footer footer";
@@ -116,104 +364,21 @@ mark {
 mark > p {
   text-align: center;
 }
-figure#taichi {
-  grid-area: taichi;
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px;
-}
-figure#taichi > img {
-  object-fit: cover;
-  height: 100%;
-}
-figure#yinyang {
-  grid-area: ying;
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px;
-}
-figure#photo {
-  grid-area: photo;
-  background-color: rgb(228, 35, 37, 0.1);
-  border-radius: 8px;
-  /* background: url('3f2b5043-315d-4b2e-a265-59d791d95c09.jpg') no-repeat;
-  background-size: contain; */
-}
-figure#photo > img {
-  border-radius: 8px;
-  object-fit: cover;
-  width: 100%;
-}
-figure#map {
-  grid-area: map;
-}
-figure#map a {
-  display: block;
-  height: 100%;
-  position: relative;
-}
-figure#map a > img {
-  border-radius: 8px;
-  object-fit: cover;
-  width: 100%;
-}
-figure#map a > figcaption {
-  position: absolute;
-  bottom: 0px;
-  color: #eee;
-  font-size: 0.8em;
-  font-weight: 500;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8));
-  padding: 12px;
-  border-radius: 8px;
-}
-section#contact {
-  grid-area: contact;
+
+
+
+
+section#addr {
+  grid-area: addr;
   background: #EEE;
-  border-radius: 12px;
-  padding: 8px 12px;
-  font-size: 0.8em;
+  border-radius: 8px;
 }
-section#contact ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-figure#biot {
-  grid-area: biot;
-}
-figure#biot img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-footer {
-  grid-area: footer;
+section#addr > a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #DDD;
-  font-size: 0.8rem;
-  padding: 0 0 8px 0;
 }
-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-footer ul li {
-  display: inline-block;
-  margin: 0px 10px 0px 10px;
-  vertical-align: middle;
-}
-footer a {
-  color: inherit;
-}
-footer a:hover {
-  color: #AAA
-}
-footer svg {
-  height:1rem;
-  width:1rem;
-}
+*/

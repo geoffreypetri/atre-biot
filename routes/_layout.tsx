@@ -3,14 +3,14 @@ import { PageProps } from "$fresh/server.ts";
 export default function Layout({ Component, state }: PageProps) {
   // do something with state here
   return (
-    <div class="layout">
-        <header>
+    <div class="layout grid">
+        <header class="area bg-white rounded">
             <a href="/">
                 <img src="/atre-taichi-logo.svg" />
-                <h1>Académie de Taichi et d'Arts Energétiques</h1>
+                <h1>Académie&nbsp;de&nbsp;Taichi Arts&nbsp;Energétiques</h1>
             </a>
         </header>
-        <nav>
+        <nav class="area bg-white rounded">
             <ul class="nav">
                 <li><a href="ecole">Notre école</a></li>
                 <li><a href="taichi">Taichi</a></li>
@@ -19,7 +19,7 @@ export default function Layout({ Component, state }: PageProps) {
             </ul>
         </nav>
         <footer>
-            <ul>
+            <ul class="list-inline">
                 <li>ATRE Biot Association loi 1901</li>
                 <li>RNA W061009085</li>
                 <li>Siret 829 457 241 00018</li>
