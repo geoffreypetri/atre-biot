@@ -4,21 +4,57 @@ export default function Layout({ Component, state }: PageProps) {
   // do something with state here
   return (
     <div class="layout grid">
-        <header class="area bg-white rounded">
+        <header class="area rounded sq-s">
             <a href="/">
                 <img src="/atre-taichi-logo.svg" />
                 <h1>Académie&nbsp;de&nbsp;Taichi Arts&nbsp;Energétiques</h1>
             </a>
         </header>
-        <nav class="area bg-white rounded">
-            <ul class="nav">
-                <li><a href="ecole">Notre école</a></li>
-                <li><a href="taichi">Taichi</a></li>
-                <li><a href="sante">Sport Santé</a></li>
-                <li><a href="infos">Renseignements</a></li>
+        <nav class="area rounded sq-s">
+            <ul>
+            <li><a href="/ecole">Notre école</a></li>
+            <li><a href="/taichi">Taichi</a></li>
+            <li><a href="/sante">Sport Santé</a></li>
+            <li><a href="/infos">Renseignements</a></li>
             </ul>
         </nav>
-        <footer>
+        <mark class="area rounded cs-xl">
+            <p>Venez&nbsp;essayer un cours&nbsp;d'essai&nbsp;gratuit avec&nbsp;nous&nbsp;!</p>
+        </mark>
+        <Component />
+      <figure id="taichi" class="area rounded rs-s">
+        <img src="/taichi.png" alt="Taichi" class="rounded contain" />
+      </figure>
+      <figure id="yinyang" class="area rounded sq-xs">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -40 80 80">
+          <circle r="39"/>
+          <path fill="#fff" d="M0,38a38,38 0 0 1 0,-76a19,19 0 0 1 0,38a19,19 0 0 0 0,38"/>
+          <circle r="5" cy="19" fill="#fff"/>
+          <circle r="5" cy="-19"/>
+        </svg>
+      </figure>
+      <section id="contact" class="area rounded cs-m rs-s">
+        <h4>Jean-Marc Guibilato</h4>
+        <ul>
+          <li>Professeur diplômé d'Etat</li>
+          <li><a href="tel:0614608134">06 14 60 81 34</a></li>
+          <li><a href="mailto:academietaichi@orange.fr">academietaichi@orange.fr</a></li>
+        </ul>
+      </section>
+      <figure id="map" class="area rounded sq-m">
+        <a href="https://www.google.com/maps/place/Complexe+Sportif+Pierre+Operto/@43.6277299,7.097305,17z/data=!3m1!4b1!4m6!3m5!1s0x12cdd4b62399d627:0xcb72465e6540bb8a!8m2!3d43.6277299!4d7.0998799!16s%2Fg%2F11c44dkpdc?entry=ttu">
+          <img class="rounded contain" src="Salle Paul Gilardi-map.png" alt="Complexe Sportif Pierre Operto 06410 Biot" />
+          <figcaption>
+            Salle Paul Gilardi, Biot
+          </figcaption>
+        </a>
+      </figure>
+        <figure id="biot" class="area rounded cs-s">
+            <a href="">
+            <img class="rounded contain" src="/2022_Logo_320_50_WP-1.png" alt="Logo ville Biot" />
+            </a>
+        </figure>
+        <footer class="area rounded cs-max">
             <ul class="list-inline">
                 <li>ATRE Biot Association loi 1901</li>
                 <li>RNA W061009085</li>
@@ -30,7 +66,6 @@ export default function Layout({ Component, state }: PageProps) {
                 </li>
             </ul>
         </footer>
-      <Component />
     </div>
   );
 }
