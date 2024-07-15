@@ -162,6 +162,7 @@ h2 {
 }
 p {
   margin: 0 0 .5rem 0;
+  text-align: justify;
 }
 nav {
   display: flex;
@@ -186,7 +187,6 @@ mark {
 }
 main {
   grid-row-end: span var(--main-content-rows);
-  text-align: justify;
 }
 #taichi {
   grid-column-start: 4;
