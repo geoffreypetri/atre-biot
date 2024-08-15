@@ -13,8 +13,8 @@ export default function Home() {
         
         <h2>Horaires</h2>
         <ul>
-          <li><b>Tous niveaux : MARDI 19H00 - 20H00</b><br/><i>Cours pouvant être déplacé en fonction des impératifs d'occupation de la salle soit le vendredi aux mêmes horaires et lieu ou en extérieur le dimanche matin (Jardin Frédéric Mistral, Parking de la Baume ou Bois de Vaugrenier)</i></li>
-          <li><b>Niveau intermédiaire <i>(mais ouvert à tous)</i> : VENDREDI 18H30 - 20H00</b> environ 1 à 2 fois par mois<br/><i>Gymnastique chinoise, Révisions des Formes, Travail en duo</i></li>
+          <li><b>Tous niveaux : MARDI 19H00 - 20H00</b><br/><i>Cours pouvant être déplacé en fonction des impératifs d'occupation de la salle soit le jeudi aux mêmes horaires et lieu ou en extérieur le dimanche matin (Jardin Frédéric Mistral, Parking de la Baume ou Bois de Vaugrenier)</i></li>
+          <li><b>Niveau intermédiaire <i>(mais ouvert à tous)</i> : JEUDI 18H30 - 20H00</b> environ 1 à 2 fois par mois<br/><i>Gymnastique chinoise, Révisions des Formes, Travail en duo</i></li>
           <li><b>Cours supplémentaires et facultatifs</b></li>
         </ul>
 
