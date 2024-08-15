@@ -11,7 +11,7 @@ export default function Home() {
         <p><b>A T R E Association loi 1901 - RNA : W061009085 - N° de Siret : 829 457 241 00018</b></p>
 
         <h2>Enseignants</h2>
-        <p>L’enseignant principal est : <b>Jean Marc Guibilato, Professeur Diplômé d'Etat</b></p>
+        <p>L'enseignant principal est : <b>Jean Marc Guibilato, Professeur Diplômé d'Etat</b></p>
         <p>Après des débuts dans la pratique des Arts martiaux chinois externes (Kung-Fu), celui-ci s'est progressivement tourné vers l'apprentissage puis l'enseignement du Taïchi (Taiji) et de la gymnastiques chinoise (Qi Gong). Ses formateurs principaux étant Vincent Pham Ngoc et Jean Marie Portos, tous deux professeurs diplômés d'Etat et ayant pratiqué auprès d'experts asiatiques : Maitres Hoang Nam, Yuan Hong Hai, Wang Wei Guo.</p>
         <p>Jean Marie Portos intervient également régulièrement dans nos cours durant la saison, principalement les vendredis.</p>
       </main>
