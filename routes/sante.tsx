@@ -3,8 +3,42 @@ export default function Home() {
   return (
     <>
       <main class="area rounded cs-xl">
-        <h2>Sport Santé</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+        <h2>D'une pratique martiale à...</h2>
+        <p><b>Une pratique martiale du Taïchi est basée sur le ressenti tactile, énergétique et intuitif : intercepter, coller, dévier puis renvoyer.</b></p>
+        <p>Comment développer ces différentes qualités ?</p>
+        <ul>
+          <li>- une gestuelle lente et relâchée,</li>
+          <li>- un contrôle de la respiration,</li>
+          <li>- un schéma corporel <i>efficient</i>,</li>
+          <li>- un travail <i>d'écoute intérieure</i>,</li>
+          <li>- une utilisation de la conscience et une visualisation de son exécution motrice : clarté de l'esprit, aide à la relaxation et du moral.</li>
+        </ul>
+
+        <h2>...une <i>gymnastique</i> pour une Bonne Santé</h2>
+        <p><b>Une bonne Santé passe par 3 types d'exercices :</b></p>
+        <ol>
+          <li>Exercices de flexibilité articulaire pour diminuer la rigidité et soulager la douleur</li>
+          <li>Exercices de renforcement musculaire pour soulager et renforcer les articulations</li>
+          <li>Exercices cardio-vasculaires pour renforcer le cœur et les poumons, la vigueur, irriguer et oxygéner les différents tissus</li>
+        </ol>
+        <p>Un 4ème type d'exercice agit sur la santé : exercices de correction posturale et d'augmentation de la conscience spatiale : économie musculaire, espace pulmonaire, sentiment positif (amélioration physique).</p>
+
+        <h2>Constats</h2>
+        <ul>
+          <li>- Corrélation entre les exercices pratiqués pour le Taïchi et pour la Santé</li>
+          <li>- Le Taïchi pris à son 1er niveau, peut donc être pratiqué comme une « gymnastique » bénéfique pour la Santé</li>
+          <li>- Ce n'est pas une gymnastique dynamique mais une gymnastique douce et lente basée sur le ressenti, la respiration et la visualisation. Les mouvements lents et continus avec intériorisation de leur exécution apportent relâchement</li>
+        </ul>
+
+        <h2>Le Taïchi aujourd'hui</h2>
+        <p>Le Tai Chi Chuan, au départ art martial chinois est donc aujourd'hui également pratiqué comme une gymnastique traditionnelle chinoise accessible à tous. Sa pratique régulière apporte :</p>
+        <ul>
+          <li>- santé, calme, équilibre, contrôle du stress, relaxation.</li>
+        </ul>
+        <p>Les mouvements lents et continus sont conçus de façon à développer :</p>
+        <ul>
+          <li>- une prise de conscience corporelle, une harmonisation respiration/mouvement, une détente corps/esprit.</li>
+        </ul>
       </main>
     </>
   );

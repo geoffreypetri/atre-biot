@@ -183,7 +183,7 @@ nav li a:hover {
 mark {
   padding: 1rem;
   text-align: center;
-  background-color: #ffd00026;
+  background-color: #ffd000;
 }
 main {
   grid-row-end: span var(--main-content-rows);
