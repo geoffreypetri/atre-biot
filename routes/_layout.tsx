@@ -19,7 +19,7 @@ export default function Layout({ Component, state }: PageProps) {
             </ul>
         </nav>
         <mark class="area rounded cs-xl">
-            <p>Venez&nbsp;essayer un cours&nbsp;d'essai&nbsp;gratuit avec&nbsp;nous&nbsp;!</p>
+            <p><b>Venez&nbsp;essayer un cours&nbsp;d'essai&nbsp;gratuit avec&nbsp;nous&nbsp;!</b></p>
         </mark>
         <Component />
       <figure id="taichi" class="area rounded rs-s">
