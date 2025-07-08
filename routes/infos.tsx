@@ -12,15 +12,30 @@ export default function Home() {
         </ul>
         
         <h2>Horaires</h2>
+        <h3>TAÏCHI <i>tous niveaux</i></h3>
         <ul>
-          <li><b>Tous niveaux : MARDI 19H00 - 20H00</b><br/><i>Cours pouvant être déplacé en fonction des impératifs d'occupation de la salle soit le jeudi aux mêmes horaires et lieu ou en extérieur le dimanche matin (Jardin Frédéric Mistral, Parking de la Baume ou Bois de Vaugrenier)</i></li>
-          <li><b>Niveau intermédiaire <i>(mais ouvert à tous)</i> : JEUDI 18H30 - 20H00</b> environ 1 à 2 fois par mois<br/><i>Gymnastique chinoise, Révisions des Formes, Travail en duo</i></li>
-          <li><b>Cours supplémentaires et facultatifs</b></li>
+          <li><b>Mardi 19h à 20h et/ou vendredi 10h à 11h</b><br/><i>Cours pouvant être déplacé en fonction des impératifs d'occupation de la salle soit le jeudi aux mêmes horaires et lieu ou en extérieur le dimanche matin (Jardin Frédéric Mistral, Parking de la Baume ou Bois de Vaugrenier)</i></li>
+        </ul>
+
+        <h3>TAÏCHI <i>niveau intermédiaire irrégulier (mais ouvert à tous)</i></h3>
+        <ul>
+          <li><b>Jeudi 18h30 à 20h</b> environ 1 à 2 fois par mois</li>
+          <li>Gymnastique chinoise, Révisions des Formes, Travail en duo, théorie</li>
+        </ul>
+
+        <h3>QI GONG <i>débutants</i></h3>
+        <ul>
+          <li><b>Vendredi 9h à 10h</b> environ 1 à 2 fois par mois</li>
+          <li>Cours pouvant être déplacé en fonction des impératifs d’occupation de la salle.</li>
         </ul>
 
         <h2>Tarif annuel</h2>
-        <p>Comprenant l'adhésion et la cotisation : <b>220 €</b></p>
-        <p><i>Possibilité 3 chèques au maximum à donner à l'inscription. Merci de libeller vos chèques à l'ordre de « ATRE ».</i></p>
+        <ul>
+          <li>1 cours/semaine (Taïchi ou Qi Gong): 230 €</li>
+          <li>Cours en illimité (Taïchi et Qi Gong): 270 €</li>
+          <li>Tarif couple : - 10% sur l’ensemble des cotisations</li>
+        </ul>
+        <p><i>Possibilité 3 chèques au maximum à donner à l'inscription. Merci de libeller vos chèques à l'ordre de ATRE.<br/>Aucune cotisation ne sera remboursée en cours de saison.</i></p>
 
         <h2>A fournir à l'inscription</h2>
         <ul>

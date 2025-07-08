@@ -14,6 +14,7 @@ export default function Layout({ Component, state }: PageProps) {
             <ul>
             <li><a href="/ecole">Notre école</a></li>
             <li><a href="/taichi">Taichi</a></li>
+            <li><a href="/qi-gong">Qi Gong</a></li>
             <li><a href="/sante">Sport Santé</a></li>
             <li><a href="/infos">Renseignements</a></li>
             </ul>
