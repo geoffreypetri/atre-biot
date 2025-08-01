@@ -25,7 +25,7 @@ export default function Home() {
 
         <h3>QI GONG <i>débutants</i></h3>
         <ul>
-          <li><b>Vendredi 9h à 10h</b> environ 1 à 2 fois par mois</li>
+          <li><b>Vendredi 9h à 10h</b></li>
           <li>Cours pouvant être déplacé en fonction des impératifs d’occupation de la salle.</li>
         </ul>
 
